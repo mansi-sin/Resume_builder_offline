@@ -86,6 +86,18 @@ const ResumePreview = ({ resumeData }) => {
       {/* Main Content */}
       <div className="space-y-6">
         
+        {/* Overview Section */}
+        {resumeData.summary && resumeData.summary.trim() !== '' && (
+          <section>
+            <h2 className="text-lg font-bold uppercase tracking-wider text-black border-b border-black pb-1 mb-2">
+              Overview
+            </h2>
+            <p className="text-sm text-gray-800 leading-relaxed text-justify">
+              {resumeData.summary}
+            </p>
+          </section>
+        )}
+
         {/* Education Section */}
         {resumeData.education && resumeData.education.length > 0 && (
           <section>

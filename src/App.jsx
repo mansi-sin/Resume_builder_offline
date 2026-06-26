@@ -13,6 +13,7 @@ function App() {
     phone: '',
     linkedIn: '',
     github: '',
+    summary: '',
     education: [],
     coursework: [],
     skills: [],
